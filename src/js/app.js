@@ -202,20 +202,7 @@ var CurrencyEX = React.createClass({
             value: this.state.curToChange,
             onChange: this.sourceToTarget
           }),
-          React.createElement(
-            'label',
-            null,
-            this.state.target
-          ),
-          React.createElement('input', {
-            id: 'sourceCur',
-            type: 'text',
-            value: this.state.targetCur
-          })
-        ),
-        React.createElement(
-          'div',
-          { className: 'content' },
+
           React.createElement(
             'label',
             null,
@@ -226,6 +213,21 @@ var CurrencyEX = React.createClass({
             type: 'text',
             value: this.state.curToRev,
             onChange: this.targetToSource
+          })
+        ),
+        React.createElement(
+          'div',
+          { className: 'content' },
+
+          React.createElement(
+            'label',
+            null,
+            this.state.target
+          ),
+          React.createElement('input', {
+            id: 'sourceCur',
+            type: 'text',
+            value: this.state.targetCur
           }),
           React.createElement(
             'label',
